@@ -119,14 +119,14 @@ local mappings = {
       x = { "<cmd>lua require'dap'.terminate()<CR>", "Terminate" },
       u = { "<cmd>lua require'dap'.step_out()<CR>", "Step Out" },
     },
-  -- m = {
-  --   name = "Telescope dap",
-  --   c = {'<cmd>lua require"telescope".extensions.dap.commands{}<CR>', "dap commands"},
-  --   p = {'<cmd>lua require"telescope".extensions.dap.configurations{}<CR>', "dap configrations"},
-  --   b = {'<cmd>lua require"telescope".extensions.dap.list_breakpoints{}<CR>', "dap list Breakpoint"},
-  --   v = {'<cmd>lua require"telescope".extensions.dap.variables{}<CR>', "dap Variables"},
-  --   f = {'<cmd>lua require"telescope".extensions.dap.frames{}<CR>', "dap frames"},
-  --   },
+  m = {
+    name = "Telescope dap",
+    c = {'<cmd>lua require"telescope".extensions.dap.commands{}<CR>', "dap commands"},
+    p = {'<cmd>lua require"telescope".extensions.dap.configurations{}<CR>', "dap configrations"},
+    b = {'<cmd>lua require"telescope".extensions.dap.list_breakpoints{}<CR>', "dap list Breakpoint"},
+    v = {'<cmd>lua require"telescope".extensions.dap.variables{}<CR>', "dap Variables"},
+    f = {'<cmd>lua require"telescope".extensions.dap.frames{}<CR>', "dap frames"},
+  },
   x = {
       x = {"<cmd>TroubleToggle<cr>", "Trouble Toggle"},
       w = {"<cmd>Trouble workspace_diagnostics<cr>", "Trouble workspace_diagnostics"},

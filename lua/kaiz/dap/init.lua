@@ -58,7 +58,7 @@ function M.setup()
 	configure() -- Configuration
 	configure_exts() -- Extensions
 	configure_debuggers() -- Debugger
-	-- require("telescope").load_extension("dap")
+	require("telescope").load_extension("dap")
 	-- require("nv-dap.keymap_dap").setup() -- Keymaps
 end
 

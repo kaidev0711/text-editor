@@ -12,6 +12,7 @@ local servers = {
   "jsonls",
   "yamlls",
   "dockerls",
+  -- "gopls",
 }
 
 lsp_installer.setup({

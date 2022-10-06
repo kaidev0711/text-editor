@@ -5,6 +5,7 @@ end
 
 local luasnip = require("luasnip")
 local cmp = require("cmp")
+local compare = require('cmp.config.compare')
 
 local kind_icons = {
 	Text = "",
@@ -98,6 +99,7 @@ cmp.setup({
 				luasnip = "",
 				buffer = "",
 				path = "",
+                cmp_tabnine = "",
                 emoji = "",
 			})[entry.source.name]
 			return vim_item
@@ -105,6 +107,7 @@ cmp.setup({
 	},
     sources = {
 		{ name = "nvim_lsp" },
+        { name = 'cmp_tabnine' },
 		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
@@ -120,5 +123,19 @@ cmp.setup({
 	experimental = {
 		ghost_text = true,
 	},
+    sorting = {
+    priority_weight = 2,
+    comparators = {
+      require('cmp_tabnine.compare'),
+      compare.offset,
+      compare.exact,
+      compare.score,
+      compare.recently_used,
+      compare.kind,
+      compare.sort_text,
+      compare.length,
+      compare.order,
+    },
+  },
 
 })

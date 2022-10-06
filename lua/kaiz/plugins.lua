@@ -29,6 +29,8 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use "nvim-lua/plenary.nvim"
+    use 'nvim-lua/popup.nvim'
+
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
     use 'Mofiqul/dracula.nvim'	
@@ -52,14 +54,22 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
 
-
+    --lsp
     use 'neovim/nvim-lspconfig'
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'RRethy/vim-illuminate'
     use 'williamboman/nvim-lsp-installer' 
 
+    
+    use 'lewis6991/impatient.nvim'
+    use 'folke/tokyonight.nvim'
 
-
+    use 'nvim-telescope/telescope.nvim'
+    use 'lewis6991/gitsigns.nvim'
+    use "norcalli/nvim-colorizer.lua"
+    use 'rcarriga/nvim-notify'
+    use 'folke/trouble.nvim'
+    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
    if packer_bootstrap then
     require('packer').sync()
   end

@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
+    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
@@ -59,7 +60,7 @@ return require('packer').startup(function(use)
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'RRethy/vim-illuminate'
     use 'williamboman/nvim-lsp-installer' 
-
+    use 'glepnir/lspsaga.nvim'
     
     use 'lewis6991/impatient.nvim'
     use 'folke/tokyonight.nvim'
@@ -69,7 +70,24 @@ return require('packer').startup(function(use)
     use "norcalli/nvim-colorizer.lua"
     use 'rcarriga/nvim-notify'
     use 'folke/trouble.nvim'
-    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+    use 'folke/twilight.nvim'
+    use 'folke/zen-mode.nvim'
+    use 'folke/which-key.nvim'
+    
+    -- use 'kdheepak/lazygit.nvim'
+    
+    use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'ravenxrz/DAPInstall.nvim'
+    use 'mfussenegger/nvim-dap-python'
+    use 'leoluz/nvim-dap-go'
+    use 'nvim-telescope/telescope-dap.nvim'
+
+    use 'ahmedkhalf/project.nvim'
+
+
+
    if packer_bootstrap then
     require('packer').sync()
   end

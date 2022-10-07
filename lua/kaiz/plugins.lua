@@ -86,7 +86,10 @@ return require('packer').startup(function(use)
 
     use 'ahmedkhalf/project.nvim'
 
-
+    use 'ggandor/lightspeed.nvim'
+    use 'simrat39/symbols-outline.nvim'
+    use 'karb94/neoscroll.nvim'
+    use 'goolord/alpha-nvim'
 
    if packer_bootstrap then
     require('packer').sync()

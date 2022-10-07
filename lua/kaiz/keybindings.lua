@@ -46,4 +46,10 @@ utils.nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr
 utils.nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 utils.nnoremap("<leader>fp", ":Telescope projects<CR>")
 
+utils.nnoremap("<leader>8",":SymbolsOutline<CR>")
 
+
+
+-- utils.nnoremap("<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>")
+--
+-- utils.nnoremap("<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>")

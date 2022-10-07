@@ -3,7 +3,7 @@ local fn = vim.fn
 local g = vim.g
 local opt = vim.opt
 local o = vim.o
-g.mapleader = ' '
+-- g.mapleader = ' '
 
 
 cmd('filetype plugin indent on')

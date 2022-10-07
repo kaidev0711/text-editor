@@ -9,7 +9,25 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 	update_in_insert = true,
 })
 require("nvim-treesitter.configs").setup({
-    ensure_installed = "all", -- one of "all" or a list of languages
+    ensure_installed = {
+      "c", 
+      "lua", 
+      "rust",
+      "bash",
+      "cmake",
+      "css",
+      "dockerfile",
+      "go",
+      "html",
+      "java",
+      "javascript",
+      "json",
+      "lua",
+      "markdown",
+      "python",
+      "toml",
+      "yaml", 
+    }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true,
@@ -28,4 +46,5 @@ require("nvim-treesitter.configs").setup({
 	autopairs = {
 		enable = true,
 	},
+    indent = { enable = true },
 })

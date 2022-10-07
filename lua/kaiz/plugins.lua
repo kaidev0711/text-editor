@@ -59,7 +59,9 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'RRethy/vim-illuminate'
-    use 'williamboman/nvim-lsp-installer' 
+    -- use 'williamboman/nvim-lsp-installer' 
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
     use 'glepnir/lspsaga.nvim'
     
     use 'lewis6991/impatient.nvim'
@@ -91,6 +93,15 @@ return require('packer').startup(function(use)
     use 'karb94/neoscroll.nvim'
     use 'goolord/alpha-nvim'
 
+    use 'axieax/urlview.nvim'
+    use 'j-hui/fidget.nvim'
+    use 'm-demare/hlargs.nvim'
+
+
+    -- use {
+    --     'kosayoda/nvim-lightbulb',
+    --     requires = 'antoinemadec/FixCursorHold.nvim',
+    -- }
    if packer_bootstrap then
     require('packer').sync()
   end

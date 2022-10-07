@@ -10,5 +10,6 @@ require("indent_blankline").setup {
     "packer",
     "NvimTree",
     "Trouble",
+    "TelescopePrompt",
   },
 }

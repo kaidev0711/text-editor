@@ -1,8 +1,17 @@
 local utils = require('kaiz.utils')
 
-vim.g.mapleader = ' '
+local keymap = vim.keymap.set
+local opts = { silent = true }
+--Remap space as leader key
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+
+
 --NvimTree
 utils.nnoremap('\\', ':NvimTreeToggle<CR>')
+
+-- Better paste
+utils.vnoremap("p", '"_dP')
 
 -- Change Panes
 utils.nnoremap('<C-l>', '<C-w>l')
@@ -49,6 +58,9 @@ utils.nnoremap("<leader>fp", ":Telescope projects<CR>")
 utils.nnoremap("<leader>8",":SymbolsOutline<CR>")
 
 
+-- Move selected line / block of text in visual mode
+utils.xnoremap("K", ":move '<-2<CR>gv-gv")
+utils.xnoremap("J", ":move '>+1<CR>gv-gv")
 
 -- utils.nnoremap("<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>")
 --

@@ -1,7 +1,16 @@
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
-if not status_ok then
-  return
-end
+
+require("mason").setup({
+     ui = {
+        border = "rounded",
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+        }
+    }
+})
+
+require("mason-lspconfig").setup()
 
 local servers = {
   "cssls",
@@ -14,13 +23,6 @@ local servers = {
   "dockerls",
   -- "gopls",
 }
-
-lsp_installer.setup({
-    ui = {
-    -- The border to use for the UI window. Accepts same border values as |nvim_open_win()|.
-        border = "rounded"
-    }
-})
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status_ok then

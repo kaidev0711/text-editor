@@ -6,6 +6,7 @@ local opts = { silent = true }
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
+keymap('n', '<C-a>', 'gg<S-v>G')
 
 --NvimTree
 utils.nnoremap('\\', ':NvimTreeToggle<CR>')
@@ -55,7 +56,7 @@ utils.nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr
 utils.nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 utils.nnoremap("<leader>fp", ":Telescope projects<CR>")
 
-utils.nnoremap("<leader>8",":SymbolsOutline<CR>")
+utils.nnoremap("<F8>",":SymbolsOutline<CR>")
 
 
 -- Move selected line / block of text in visual mode

@@ -22,7 +22,7 @@ local servers = {
   "jsonls",
   "yamlls",
   "dockerls",
-  -- "gopls",
+  "gopls",
 }
 
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")

@@ -37,7 +37,9 @@ local diagnostics = null_ls.builtins.diagnostics
 local sources = {
 	-- formatting.eslint,
 	-- formatting.autopep8,
-	-- frmatting.stylua,
+	formatting.gofumpt,
+    formatting.goimports,
+    -- formatting.golines,
     formatting.prettier.with {
       extra_filetypes = { "toml" },
       extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },

@@ -63,7 +63,8 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "https://github.com/kaidev0711"
+  return "                                  https://github.com/kaidev0711\
+    'If I use an environment that has good automated refactorings, I can trust those refactorings'"
 end
 
 dashboard.section.footer.val = footer()

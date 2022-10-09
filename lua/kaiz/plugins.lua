@@ -97,7 +97,11 @@ return require('packer').startup(function(use)
     use 'j-hui/fidget.nvim'
     use 'm-demare/hlargs.nvim'
 
+    use 'ThePrimeagen/refactoring.nvim'
 
+    
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
     -- use {
     --     'kosayoda/nvim-lightbulb',
     --     requires = 'antoinemadec/FixCursorHold.nvim',

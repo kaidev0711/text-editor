@@ -1,4 +1,6 @@
 -- Lua:
 vim.cmd[[colorscheme dracula]]
--- vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme tokyonight-storm]]
+
+
 

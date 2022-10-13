@@ -97,8 +97,8 @@ local mappings = {
   l = {
     name = "LSP",
     i = { ":LspInfo<cr>", "Connected Language Servers" },
-    k = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
-    h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Commands" },
+    -- k = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
+    K = { "<cmd>Lspsaga hover_doc<cr>", "Hover Commands" },
     w = { '<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>', "Add Workspace Folder" },
     W = { '<cmd>lua vim.lsp.buf.remove_workspace_folder()<cr>', "Remove Workspace Folder" },
     l = {
@@ -116,6 +116,9 @@ local mappings = {
     e = { '<cmd>Lspsaga show_line_diagnostics<cr>', "Show Line Diagnostics" },
     n = { '<cmd>Lspsaga diagnostic_jump_next<cr>', "Go To Next Diagnostic" },
     N = { '<cmd>Lspsaga diagnostic_jump_prev<cr>', "Go To Previous Diagnostic" },
+    s = { '<Cmd>Lspsaga signature_help<CR>', "signaturre help"},
+    p = { '<Cmd>Lspsaga preview_definition<CR>', "Lsp Preview definition"},
+    o = { '<Cmd>Lspsaga lsp_finder<CR>',"lsp finder"},
     f = { '<cmd>lua vim.lsp.buf.format({ timeout_ms = 2000 })<cr>', "formatting"}
   },
   z = {

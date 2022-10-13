@@ -57,5 +57,12 @@ o.whichwrap = 'b,s,<,>,[,],h,l'
 opt.guifont = "Hack Nerd Font Mono:h21"
 -- vim.cmd[[set modifiable]]
 
+-- Treesitter folding 
+-- vim.wo.foldmethod = 'expr'
+-- vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+-- opt.spelllang="en"
+-- opt.spell = false
+-- g.border_style = "rounded"
+--
 
 vim.g.python3_host_prog='/Users/kaiz/.pyenv/versions/py3nvim/bin/python'

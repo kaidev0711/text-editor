@@ -92,7 +92,6 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 
-    -- l = { toggle_lazygit, "LazyGit" }
   },
   l = {
     name = "LSP",
@@ -138,7 +137,7 @@ local mappings = {
   },
   g = {
     name = "Git",
-    g = { "<cmd>lua _lazygit_toggle()<CR>", "Lazygit" },
+    g = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },

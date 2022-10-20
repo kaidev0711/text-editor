@@ -236,7 +236,14 @@ local mappings = {
           l = { "<cmd>GoCodeLenAct<cr>", "Toggle Lens" },
           a = { "<cmd>GoCodeAction<cr>", "Code Action" },
         },
+        
       },
+    v = {
+        name= "split",
+        s = {"<cmd>split<cr>", "Split"},
+        v = {"<cmd>vsplit<cr>", "Vsplit"},
+    },
+
   -- a = {
   --   name = "hragrs",
   --   t = {"<cmd>lua require('hlargs').toggle()<cr>", "hlagrs treesiter"}

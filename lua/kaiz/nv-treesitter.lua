@@ -29,6 +29,7 @@ require("nvim-treesitter.configs").setup({
       "yaml", 
     }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
+    sync_install = false,
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlighting = true,
@@ -46,5 +47,9 @@ require("nvim-treesitter.configs").setup({
 	autopairs = {
 		enable = true,
 	},
-    indent = { enable = true },
+    indent = { enable = true, disable = { "python", "css" } },
+    context_commentstring = {
+		enable = true,
+		enable_autocmd = false,
+	},
 })

@@ -1,6 +1,3 @@
--- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
 local lualine = require('lualine')
 
 -- Color table for highlights
@@ -39,7 +36,6 @@ local config = {
     -- Disable sections and component separators
     component_separators = '',
     section_separators = '',
-    disabled_filetypes = { "alpha", "dashboard" },
     theme = {
       -- We are going to use lualine_c an lualine_x as left and
       -- right section. Both are highlighted by c theme .  So we
@@ -98,13 +94,13 @@ ins_left {
       n = colors.red,
       i = colors.green,
       v = colors.blue,
-      [''] = colors.blue,
+      [''] = colors.blue,
       V = colors.blue,
       c = colors.magenta,
       no = colors.red,
       s = colors.orange,
       S = colors.orange,
-      [''] = colors.orange,
+      [''] = colors.orange,
       ic = colors.yellow,
       R = colors.violet,
       Rv = colors.violet,

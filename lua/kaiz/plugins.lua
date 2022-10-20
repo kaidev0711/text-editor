@@ -103,12 +103,8 @@ return require('packer').startup(function(use)
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua'
 
+    use 'JoosepAlviste/nvim-ts-context-commentstring'     
 
-
-    -- use {
-    --     'kosayoda/nvim-lightbulb',
-    --     requires = 'antoinemadec/FixCursorHold.nvim',
-    -- }
    if packer_bootstrap then
     require('packer').sync()
   end

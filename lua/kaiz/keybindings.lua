@@ -9,10 +9,19 @@ vim.g.mapleader = " "
 keymap('n', '<C-a>', 'gg<S-v>G')
 
 --NvimTree
-utils.nnoremap('\\', ':NvimTreeToggle<CR>')
+utils.nnoremap('<leader>e', ':NvimTreeToggle<CR>')
 
 -- Better paste
 utils.vnoremap("p", '"_dP')
+
+
+
+-- Resize with arrows
+-- utils.nnoremap("<C-Down>", ":resize +2<CR>")
+-- utils.nnoremap("<C-Left>", ":vertical resize -2<CR>")
+-- utils.nnoremap("<C-Right>", ":vertical resize +2<CR>")
+-- utils.nnoremap("<C-Up>", ":resize -2<CR>")
+
 
 -- Change Panes
 utils.nnoremap('<C-l>', '<C-w>l')
@@ -43,9 +52,7 @@ utils.nnoremap('<leader>h', ':nohl<CR>')
 utils.nnoremap('<S-l>', ':bnext<CR>') 
 utils.nnoremap('<S-h>', ':bprevious<CR>')
 
---split
-utils.nnoremap('<leader>--', ':split<CR>')
-utils.nnoremap('<leader>//', ':vsplit<CR>')
+
 --close buffer
 utils.nnoremap('<S-q>', ':Bdelete!<CR>')
 
@@ -63,6 +70,8 @@ utils.nnoremap("<F8>",":SymbolsOutline<CR>")
 utils.xnoremap("K", ":move '<-2<CR>gv-gv")
 utils.xnoremap("J", ":move '>+1<CR>gv-gv")
 
--- utils.nnoremap("<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>")
---
--- utils.nnoremap("<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>")
+
+-- Comment
+utils.nnoremap("<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
+utils.xnoremap("<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
+

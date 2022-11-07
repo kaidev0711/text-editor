@@ -17,10 +17,10 @@ utils.vnoremap("p", '"_dP')
 
 
 -- Resize with arrows
--- utils.nnoremap("<C-Down>", ":resize +2<CR>")
--- utils.nnoremap("<C-Left>", ":vertical resize -2<CR>")
--- utils.nnoremap("<C-Right>", ":vertical resize +2<CR>")
--- utils.nnoremap("<C-Up>", ":resize -2<CR>")
+-- utils.nnoremap("<C-J>", ":resize +2<CR>")
+-- utils.nnoremap("<C-H>", ":vertical resize -2<CR>")
+-- utils.nnoremap("<C-L>", ":vertical resize +2<CR>")
+-- utils.nnoremap("<C-K>", ":resize -2<CR>")
 
 
 -- Change Panes
@@ -63,6 +63,8 @@ utils.nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr
 utils.nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 utils.nnoremap("<leader>fp", ":Telescope projects<CR>")
 
+
+--symbols  outline
 utils.nnoremap("<F8>",":SymbolsOutline<CR>")
 
 

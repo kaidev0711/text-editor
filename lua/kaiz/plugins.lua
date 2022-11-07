@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-web-devicons'
     use 'kyazdani42/nvim-tree.lua'
     use 'Mofiqul/dracula.nvim'	
+    use 'ellisonleao/gruvbox.nvim'
     use 'nvim-lualine/lualine.nvim' 
     use 'akinsho/bufferline.nvim'
     use 'moll/vim-bbye'
@@ -105,6 +106,7 @@ return require('packer').startup(function(use)
 
     use 'JoosepAlviste/nvim-ts-context-commentstring'     
 
+    use 'rose-pine/neovim'
    if packer_bootstrap then
     require('packer').sync()
   end

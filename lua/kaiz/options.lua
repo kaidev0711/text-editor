@@ -8,7 +8,7 @@ local o = vim.o
 
 cmd('filetype plugin indent on')
 cmd('syntax enable')
-
+opt.linebreak = true
 opt.fileencoding = "utf-8"
 opt.encoding = "utf-8"
 opt.fileformat = 'unix'

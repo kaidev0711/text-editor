@@ -107,6 +107,7 @@ return require('packer').startup(function(use)
     use 'JoosepAlviste/nvim-ts-context-commentstring'     
 
     use 'rose-pine/neovim'
+    use 'simrat39/rust-tools.nvim'
    if packer_bootstrap then
     require('packer').sync()
   end

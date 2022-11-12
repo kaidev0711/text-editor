@@ -64,5 +64,6 @@ opt.guifont = "Hack Nerd Font Mono:h21"
 -- opt.spell = false
 -- g.border_style = "rounded"
 --
-
+--
 vim.g.python3_host_prog='/Users/kaiz/.pyenv/versions/py3nvim/bin/python'
+

@@ -9,6 +9,7 @@ local servers = {
   "yamlls",
   "dockerls",
   "gopls",
+  -- "rust-analyzer",
 }
 
 

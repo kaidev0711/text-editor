@@ -8,6 +8,7 @@ local sources = {
 	-- formatting.autopep8,
 	formatting.gofumpt,
     formatting.goimports,
+    formatting.rustfmt,
     -- formatting.golines,
     formatting.prettier.with {
       extra_filetypes = { "toml" },

@@ -108,6 +108,8 @@ return require('packer').startup(function(use)
 
     use 'rose-pine/neovim'
     use 'simrat39/rust-tools.nvim'
+
+    use 'xiyaowong/nvim-transparent'
    if packer_bootstrap then
     require('packer').sync()
   end

@@ -62,7 +62,7 @@ utils.nnoremap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<
 utils.nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
 utils.nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 utils.nnoremap("<leader>fp", ":Telescope projects<CR>")
-
+-- utils.nnoremap("<leader>fu", "<Cmd>UrlView<CR>" )
 
 --symbols  outline
 utils.nnoremap("<F8>",":SymbolsOutline<CR>")

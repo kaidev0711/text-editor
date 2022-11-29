@@ -5,7 +5,7 @@ local opt = vim.opt
 local o = vim.o
 -- g.mapleader = ' '
 
-
+vim.cmd[[set guicursor=i:block]]
 cmd('filetype plugin indent on')
 cmd('syntax enable')
 opt.linebreak = true

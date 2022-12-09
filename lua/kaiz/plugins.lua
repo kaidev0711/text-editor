@@ -110,6 +110,8 @@ return require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
 
     use 'xiyaowong/nvim-transparent'
+
+    use 'nvim-orgmode/orgmode'
    if packer_bootstrap then
     require('packer').sync()
   end

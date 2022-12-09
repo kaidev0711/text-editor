@@ -5,7 +5,10 @@ local opt = vim.opt
 local o = vim.o
 -- g.mapleader = ' '
 
-vim.cmd[[set guicursor=i:block]]
+vim.cmd[[
+set guicursor=i:block
+set clipboard=unnamed
+]]
 cmd('filetype plugin indent on')
 cmd('syntax enable')
 opt.linebreak = true
@@ -56,6 +59,12 @@ o.shortmess = o.shortmess .. 'c'
 o.whichwrap = 'b,s,<,>,[,],h,l'
 opt.guifont = "Hack Nerd Font Mono:h21"
 -- vim.cmd[[set modifiable]]
+--vim.cmd('language en_US.utf8')
+
+
+opt.conceallevel = 2
+opt.concealcursor = 'nc'
+opt.shellslash = true
 
 -- Treesitter folding 
 -- vim.wo.foldmethod = 'expr'

@@ -27,6 +27,7 @@ require("nvim-treesitter.configs").setup({
       "python",
       "toml",
       "yaml", 
+      "org"
     }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
     sync_install = false,

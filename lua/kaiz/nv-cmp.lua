@@ -113,8 +113,7 @@ cmp.setup({
 		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
-        -- { name = 'cmdline' },
-
+        { name = 'orgmode' }
 	},
     confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
